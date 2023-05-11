@@ -1,0 +1,33 @@
+type AddGame @entity(immutable: true) {
+  id: Bytes!
+  gameName: String! # string
+  gameId: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type AddOperator @entity(immutable: true) {
+  id: Bytes!
+  _operator: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type CreateQuest @entity(immutable: true) {
+  id: Bytes!
+  questID: BigInt! # uint256
+  gameName: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type RemoveOperator @entity(immutable: true) {
+  id: Bytes!
+  _operator: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
