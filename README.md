@@ -9,35 +9,57 @@ https://api.studio.thegraph.com/query/46635/gg-quest-subgraph/v0.0.1
 
 Events emitted :
 
-  -> event AddOperator(address _operator);
-	
-  -> event RemoveOperator(address _operator);
+  ```solidity 
+  event AddOperator(address _operator);
+  ```
+  ```solidity 	
+  event RemoveOperator(address _operator);
+  ```
   
 2. ggProfiles Contract 
 
 https://api.studio.thegraph.com/query/46635/gg-profiles-subgraph/v.0.01
 
 Events emitted :
-
-  -> event Mint(address _userAddress, string _pseudo);
+ ```solidity 	
+ event Mint(address _userAddress, string _pseudo);
+ ```
 	
-  ->  event Burn(address _userAddress);
+ ```solidity 	
+ event Burn(address _userAddress);
+ ```	
+ 
+ ```solidity 	
+ event Update(address _userAddress, string _pseudo);
+ ```	
+ 
+ ```solidity 	
+ event IncreaseReputation(address _userAddress, uint _amount);
+ ```
 	
-  ->  event Update(address _userAddress, string _pseudo);
+ ```solidity 	
+ event DecreaseReputation(address _userAddress, uint _amount);
+ ```
 	
-  ->  event IncreaseReputation(address _userAddress, uint _amount);
+ ```solidity 	
+ event AddOperator(address _operator);
+ ```
 	
-  ->  event DecreaseReputation(address _userAddress, uint _amount);
+ ```solidity 	
+ event RemoveOperator(address _operator);
+ ```
 	
-  ->  event AddOperator(address _operator);
+ ```solidity 	
+ event AddSupportedThirdParty(string _name);
+ ```
 	
-  ->  event RemoveOperator(address _operator);
+ ```solidity 	
+ event LinkThirdPartyToProfile(address _userAddress, uint _thirdPartyId, uint _thirdPartyUserId);
+ ```
 	
-  ->  event AddSupportedThirdParty(string _name);
-	
-  ->  event LinkThirdPartyToProfile(address _userAddress, uint _thirdPartyId, uint _thirdPartyUserId);
-	
-  ->  event UnlinkThirdPartyToProfile(address _userAddress, uint _thirdPartyId);
+ ```solidity 	
+ event UnlinkThirdPartyToProfile(address _userAddress, uint _thirdPartyId);
+ ```
 	
   
   
